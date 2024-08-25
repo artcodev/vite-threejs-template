@@ -1,0 +1,70 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body
+{
+    overflow: hidden;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+}
+
+.webgl
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    outline: none;
+}
+
+#progress-container {
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
+
+#progress-bar {
+    height: 5px;
+    background-color: #4c89af;
+    width: 0;
+    text-align: center;
+    line-height: 5px;
+    color: white;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px;
+    color: #ffffff;
+    font-family: $space-mono;
+    font-size: 1rem;
+    display: flex;
+    box-sizing: border-box;
+    justify-content: flex-start;
+
+    a {
+        color: #ffffff;
+        transition: color 0.3s ease-out;
+        text-decoration: none;
+
+        &:hover {
+            color: #05e6e6;
+        }
+    }
+
+    p {
+        line-height: 24px;
+    }
+
+    .social {
+        margin-left: 20px;
+    }
+}

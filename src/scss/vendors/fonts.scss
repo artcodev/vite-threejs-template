@@ -1,0 +1,8 @@
+@include font-faceAlt('GT Walsheim LC', '#{$font-path}/gt-walsheim/GT-Walsheim-Light', 300);
+@include font-faceAlt('GT Walsheim LC', '#{$font-path}/gt-walsheim/GT-Walsheim-Regular', 400);
+@include font-faceAlt('GT Walsheim LC', '#{$font-path}/gt-walsheim/GT-Walsheim-Medium', 500);
+
+@include font-face('Space Mono', 'Space Mono', '#{$font-path}/space-mono/SpaceMono-Regular', 400);
+@include font-face('Space Mono', 'Space Mono', '#{$font-path}/space-mono/SpaceMono-Bold', 700);
+
+@include font-face('icomoon', 'icomoon', '#{$font-path}/icomoon/icomoon', 400, normal, 1mpxvt);

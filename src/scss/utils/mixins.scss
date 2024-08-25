@@ -1,0 +1,30 @@
+@mixin font-faceAlt($font-name, $url, $weight: normal, $style: normal){
+    @font-face {
+        font-family: $font-name;
+        font-weight: $weight;
+        font-style: $style;
+        src: url('#{$url}.woff2') format('woff2'),
+        url('#{$url}.woff') format('woff'),
+        url('#{$url}.ttf') format('truetype');
+        font-display: swap;
+    }
+}
+
+@mixin font-face($local-font-name:false, $font-name, $url, $weight: normal, $style: normal, $icomoon: false){
+    @font-face {
+        font-family: $font-name;
+        font-weight: $weight;
+        font-style: $style;
+        @if $icomoon {
+            font-display: block;
+            src: url('#{$url}.eot?5sv48p');
+            src: url('#{$url}.eot?#iefix5sv48p') format('embedded-opentype'),
+            url('#{$url}.svg?5sv48p') format('svg'),
+            url('#{$url}.ttf?5sv48p') format('truetype'),
+            url('#{$url}.woff?5sv48p') format('woff');
+        } @else {
+            src: local('#{$local-font-name}'), local('#{$font-name}'),  url('#{$url}.woff2?v1112') format('woff2');
+            font-display: swap;
+        }
+    }
+}
